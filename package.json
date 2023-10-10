@@ -1,6 +1,6 @@
 {
   "name": "@jaikeex/jfp",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
