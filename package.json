@@ -13,12 +13,13 @@
   "scripts": {
     "prebuild": "rimraf dist && yarn test:build",
     "prepush": "yarn test:build",
-    "build": "rollup -c",
+    "build": "rollup -c && yarn generate-dts",
     "test": "jest --watch",
     "test:build": "jest",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,md}\"",
     "lint": "eslint --fix .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "generate-dts": "dts-bundle-generator -o dist/index.d.ts dist/esm/index.ts"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "@types/jest": "^29.5.5",
     "@typescript-eslint/eslint-plugin": "^6.7.5",
     "@typescript-eslint/parser": "^6.7.5",
+    "dts-bundle-generator": "^8.0.1",
     "eslint": "^8.51.0",
     "husky": "^8.0.0",
     "jest": "^29.7.0",

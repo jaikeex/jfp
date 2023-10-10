@@ -7,7 +7,8 @@ export default [{
     input: 'src/index.ts',
     output: [
         {
-            dir: 'dist',
+            dir: 'dist/esm',
+            name: "@jaikeex/jfp",
             format: 'esm',
             sourcemap: true,
         },
