@@ -1,6 +1,6 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "baseUrl": "./",
     "module": "ES6",
     "target": "es2022",
     "strict": true,
@@ -9,19 +9,6 @@
     "declaration": true,
     "declarationMap": true,
     "skipLibCheck": true,
-    "outDir": "dist",
-    "rootDir": "src",
     "moduleResolution":"node",
-    "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    }
-  },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules", "dist"
-  ]
+  }
 }
