@@ -1,14 +1,33 @@
 {
   "name": "jfp",
-  "version": "0.0.0",
-  "main": "index.ts",
+  "version": "0.0.1",
+  "main": "dist/index.ts",
+  "types": "dist/index.d.ts",
   "author": "jaikeex",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "tsc"
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "test": "jest --watch"
   },
-  "dependencies": {
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaikeex/jfp.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "tag": "alpha",
+    "access": "public"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.5",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.5",
     "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }
