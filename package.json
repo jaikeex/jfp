@@ -1,11 +1,14 @@
 {
-  "name": "jfp",
-  "version": "0.0.1",
-  "main": "dist/index.ts",
+  "name": "@jaikeex/jfp",
+  "version": "0.0.2",
+  "module": "dist/index.ts",
   "types": "dist/index.d.ts",
   "author": "jaikeex",
   "license": "MIT",
   "private": false,
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c",
