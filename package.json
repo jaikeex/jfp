@@ -1,6 +1,6 @@
 {
   "name": "@jaikeex/jfp",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "main": "dist/cjs/index.js",
   "types": "dist/index.d.ts",
   "author": "jaikeex",
