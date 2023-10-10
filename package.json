@@ -1,6 +1,6 @@
 {
   "name": "@jaikeex/jfp",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "module": "dist/index.ts",
   "types": "dist/index.d.ts",
   "type": "module",
