@@ -1,5 +1,4 @@
 {
-  "apps/**/*.{js,ts}": ["prettier --write", "eslint --fix"],
-  "packages/**/*.{js,ts}": ["prettier --write", "eslint --fix"],
-  "*.scss": "prettier --write"
+  "src/**/*.{js,ts}": ["prettier --write", "eslint --fix"],
+  "__tests__/**/*.{js,ts}": ["prettier --write", "eslint --fix"]
 }

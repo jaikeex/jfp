@@ -1,11 +1,10 @@
-import { None } from "@/option/None";
+import { None } from './None';
 import { Option } from './Option';
 
-export class Some<T> extends Option<T> {
+export class Some<T> implements Option<T> {
   private readonly value: T;
 
   constructor(x: T) {
-    super();
     this.value = x;
   }
 
@@ -17,9 +16,9 @@ export class Some<T> extends Option<T> {
 
   forEach = (f: (x: T) => void): void => f(this.value);
 
-  orElse = (x: Option<T>): Option<T> => this;
+  orElse = (_: Option<T>): Option<T> => this;
 
-  getOrElse = (x: T): T => this.value;
+  getOrElse = (_: T): T => this.value;
 
   isDefined = (): boolean => true;
 

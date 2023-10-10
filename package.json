@@ -3,6 +3,7 @@
   "version": "0.0.3",
   "module": "dist/index.ts",
   "types": "dist/index.d.ts",
+  "type": "module",
   "author": "jaikeex",
   "license": "MIT",
   "private": false,

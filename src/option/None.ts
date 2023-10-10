@@ -1,23 +1,23 @@
 import { Option } from './Option';
 
-export class None<T> extends Option<T> {
-    map = <S>(_: (x: T) => S) => new None<S>();
+export class None<T> implements Option<T> {
+  map = <S>(_: (x: T) => S) => new None<S>();
 
-    flatMap = <S>(_: (x: T) => Option<S>) => new None<S>();
+  flatMap = <S>(_: (x: T) => Option<S>) => new None<S>();
 
-    filter = (_: (x: T) => boolean) => this;
+  filter = (_: (x: T) => boolean) => this;
 
-    forEach = (_: (x: T) => void) => {};
+  forEach = (_: (x: T) => void) => {};
 
-    orElse = (x: Option<T>) => x;
+  orElse = (x: Option<T>) => x;
 
-    getOrElse = (x: T) => x;
+  getOrElse = (x: T) => x;
 
-    isDefined = () => false;
+  isDefined = () => false;
 
-    isEmpty = () => true;
+  isEmpty = () => true;
 
-    get = () => {
-        throw new Error('No such element');
-    };
+  get = () => {
+    throw new Error('No such element');
+  };
 }

@@ -1,5 +1,5 @@
 describe('option', () => {
-    it('should be defined', () => {
-        expect(true).toBeTruthy();
-    });
+  it('should be defined', () => {
+    expect(true).toBeTruthy();
+  });
 });

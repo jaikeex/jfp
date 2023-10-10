@@ -1,6 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
     "module": "ES6",
     "target": "es2022",
     "strict": true,
