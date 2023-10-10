@@ -1,4 +1,8 @@
-export interface Option<T> {
+declare global {
+  interface Option<T> extends JFTOption<T> {}
+}
+
+interface JFTOption<T> {
   map: <S>(f: (x: T) => S) => Option<S>;
   flatMap: <S>(f: (x: T) => Option<S>) => Option<S>;
   filter: (f: (x: T) => boolean) => Option<T>;
@@ -9,3 +13,5 @@ export interface Option<T> {
   isEmpty: () => boolean;
   get: () => T;
 }
+
+export {};
