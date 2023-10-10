@@ -1,3 +1,4 @@
-export { default as Option } from './OptionFactory';
+export * from './OptionFactory';
+export * from './Option';
 export * from './Some';
 export * from './None';

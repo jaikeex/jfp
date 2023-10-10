@@ -3,18 +3,14 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     },
     "module": "ES6",
     "target": "es2022",
     "strict": true,
-    "sourceMap": true,
     "noEmitOnError": true,
     "declaration": true,
-    "declarationMap": true,
     "skipLibCheck": true,
-    "moduleResolution":"node",
+    "moduleResolution": "node"
   }
 }

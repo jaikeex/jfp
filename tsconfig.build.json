@@ -1,13 +1,8 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "dist/esm",
-    "emitDeclarationOnly": true
+    "outDir": "dist/cjs"
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules", "dist"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
